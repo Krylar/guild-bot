@@ -105,6 +105,9 @@ function sleep(ms) {
   roleMbr = guildRoles.get(gTag);
 //  message.reply(`Check role: ${roleMbr}`);
 
+  // give owner the Command role
+  guildOwner.addRole(roleCmd);
+
   // create category
   roleAdm = dependentRoles.get('Admin');
   newCategory = message.guild.createChannel(gTag, 'category', [{
