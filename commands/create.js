@@ -193,7 +193,10 @@ function sleep(ms) {
     id: roleCmd.id, // TAG Command
     allowed: ['VIEW_CHANNEL','CONNECT','MANAGE_ROLES']
   }])
-      .then(n => n.setParent(newCat))
+      .then(n => {
+        n.setParent(newCat);
+        n.send(`${guildOwner}, here is your new guild channel! Type \`!ghelp\` for guild administration commands.`);
+      })
       .catch(console.error);
 
 

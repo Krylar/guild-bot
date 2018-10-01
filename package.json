@@ -1,6 +1,6 @@
 {
   "name": "guild-bot",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "Guild management bot for 804\nBased on GuideBot",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "dotenv": "^6.0.0",
     "enmap": "^2.0.4",
     "enmap-sqlite": "^2.0.5",
+    "express": "^4.16.3",
     "moment": "^2.20.1",
     "moment-duration-format": "^2.2.0"
   }
